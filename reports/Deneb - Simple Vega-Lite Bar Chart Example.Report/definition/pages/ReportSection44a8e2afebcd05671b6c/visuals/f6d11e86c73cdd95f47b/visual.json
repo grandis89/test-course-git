@@ -1,0 +1,166 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "f6d11e86c73cdd95f47b",
+  "position": {
+    "x": 0,
+    "y": 472,
+    "z": 5000,
+    "height": 247.99999999999997,
+    "width": 688,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "deneb7E15AEF80B9E4D4F8E12924291ECE89A",
+    "query": {
+      "queryState": {
+        "dataset": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Average Temperature by Month"
+                    }
+                  },
+                  "Property": "Mean Temperature"
+                }
+              },
+              "queryRef": "Average Temperature by Month.Mean Temperature"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Average Temperature by Month"
+                    }
+                  },
+                  "Property": "Sample"
+                }
+              },
+              "queryRef": "Average Temperature by Month.Sample"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Average Temperature by Month"
+                  }
+                },
+                "Property": "Mean Temperature"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "vega": [
+        {
+          "properties": {
+            "jsonSpec": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\n  \"data\": {\"name\": \"dataset\"},\n  \"layer\": [\n    {\n      \"description\": \"IQR Rect\",\n      \"mark\": {\n        \"type\": \"rect\",\n        \"tooltip\": null\n      },\n      \"encoding\": {\n        \"x\": {\n          \"aggregate\": \"q1\",\n          \"field\": \"Mean Temperature\"\n        },\n        \"x2\": {\n          \"aggregate\": \"q3\",\n          \"field\": \"Mean Temperature\"\n        }\n      }\n    },\n    {\n      \"description\": \"Quantiles\",\n      \"transform\": [\n        {\n          \"quantile\": \"Mean Temperature\",\n          \"probs\": [\n            0.05,\n            0.25,\n            0.5,\n            0.75,\n            0.95\n          ],\n          \"groupby\": [\"City\"]\n        }\n      ],\n      \"layer\": [\n        {\n          \"description\": \"Quantitle Lines\",\n          \"mark\": {\n            \"type\": \"rule\",\n            \"tooltip\": null\n          },\n          \"encoding\": {\n            \"x\": {\n              \"field\": \"value\",\n              \"type\": \"quantitative\"\n            },\n            \"color\": {\n              \"condition\": [\n                {\n                  \"test\": \"datum.prob === 0.05 || datum.prob === 0.95\",\n                  \"value\": \"#A8337D\"\n                }\n              ],\n              \"value\": \"#0D6ABF\"\n            },\n            \"strokeDash\": {\n              \"condition\": [\n                {\n                  \"test\": \"datum.prob === 0.5 || datum.prob === 0.05 || datum.prob === 0.95\",\n                  \"value\": [1, 0]\n                }\n              ],\n              \"value\": [0, 1]\n            }\n          }\n        },\n        {\n          \"description\": \"Quantitle Labels\",\n          \"mark\": {\"type\": \"text\"},\n          \"encoding\": {\n            \"x\": {\n              \"field\": \"value\",\n              \"type\": \"quantitative\"\n            },\n            \"text\": {\n              \"condition\": [\n                {\n                  \"test\": \"datum.prob === 0.25\",\n                  \"value\": \"Q1\"\n                },\n                {\n                  \"test\": \"datum.prob === 0.5\",\n                  \"value\": \"Med.\"\n                },\n                {\n                  \"test\": \"datum.prob === 0.75\",\n                  \"value\": \"Q3\"\n                }\n              ],\n              \"field\": \"prob\",\n              \"title\": \"Probability\",\n              \"format\": \".0%\"\n            },\n            \"color\": {\n              \"condition\": [\n                {\n                  \"test\": \"datum.prob === 0.05 || datum.prob === 0.95\",\n                  \"value\": \"#A8337D\"\n                },\n                {\n                  \"test\": \"datum.prob === 0.5\",\n                  \"value\": \"#0D6ABF\"\n                }\n              ],\n              \"value\": \"#605E5C\"\n            }\n          }\n        }\n      ]\n    },\n    {\n      \"description\": \"Density Line Plot\",\n      \"transform\": [\n        {\n          \"density\": \"Mean Temperature\",\n          \"bandwidth\": 0.4\n        }\n      ],\n      \"layer\": [\n        {\n          \"description\": \"Density Line Halo\",\n          \"mark\": {\n            \"type\": \"line\",\n            \"color\": \"white\",\n            \"strokeWidth\": 8\n          }\n        },\n        {\n          \"description\": \"Density Line\",\n          \"mark\": {\"type\": \"line\"}\n        },\n        {\n          \"description\": \"Mouse hover - Density Line\",\n          \"params\": [\n            {\n              \"name\": \"hover\",\n              \"select\": {\n                \"type\": \"point\",\n                \"on\": \"mouseover\",\n                \"clear\": \"mouseout\",\n                \"nearest\": true,\n                \"encodings\": [\"x\"]\n              }\n            }\n          ],\n          \"mark\": {\n            \"type\": \"rule\",\n            \"size\": 1,\n            \"color\": \"#8B8A88\"\n          },\n          \"encoding\": {\n            \"tooltip\": [\n              {\n                \"title\": \"Temperature (°C)\",\n                \"field\": \"value\",\n                \"format\": \"#0.00\",\n                \"formatType\": \"pbiFormat\"\n              },\n              {\n                \"title\": \"Density (%)\",\n                \"field\": \"density\",\n                \"format\": \"0.0%\",\n                \"formatType\": \"pbiFormat\"\n              }\n            ],\n            \"y\": {\"value\": \"height\"},\n            \"y2\": {\"value\": 0},\n            \"opacity\": {\n              \"condition\": {\n                \"param\": \"hover\",\n                \"value\": 1,\n                \"empty\": false\n              },\n              \"value\": 0\n            }\n          }\n        }\n      ],\n      \"encoding\": {\n        \"x\": {\n          \"field\": \"value\",\n          \"title\": \"Temperature (°C)\",\n          \"type\": \"quantitative\"\n        },\n        \"y\": {\n          \"field\": \"density\",\n          \"type\": \"quantitative\",\n          \"axis\": {\n            \"format\": \"0.%\",\n            \"formatType\": \"pbiFormat\"\n          }\n        }\n      }\n    }\n  ]\n}'"
+                }
+              }
+            },
+            "jsonConfig": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\n  \"font\": \"Segoe UI\",\n  \"view\": {\"stroke\": \"transparent\"},\n  \"header\": {\n    \"title\": \"\",\n    \"labelColor\": \"#333\",\n    \"labelOrient\": \"top\",\n    \"labelAnchor\": \"start\",\n    \"labelFontSize\": 16,\n    \"labelFontWeight\": 400,\n    \"labelPadding\": -35\n  },\n  \"axis\": {\n    \"domain\": false,\n    \"labelColor\": \"#605E5C\",\n    \"labelFontSize\": 12,\n    \"labelPadding\": 5,\n    \"ticks\": false,\n    \"tickCount\": 5,\n    \"titleFontSize\": 12,\n    \"titleFontWeight\": 400,\n    \"titleColor\": \"#605E5C\",\n    \"titlePadding\": 5,\n    \"gridDash\": [1, 5],\n    \"gridColor\": \"#A9A9A9\",\n    \"nice\": true\n  },\n  \"axisY\": {\n    \"title\": \"\"\n  },\n  \"line\": {\n    \"interpolate\": \"cardinal\",\n    \"strokeWidth\": 3,\n    \"strokeCap\": \"round\",\n    \"color\": \"#605E5C\"\n  },\n  \"rect\": {\"color\": \"#eaeaea\"},\n  \"text\": {\n    \"baseline\": \"bottom\",\n    \"align\": \"center\",\n    \"dy\": -2,\n    \"y\": 0,\n    \"fontSize\": 10,\n    \"fontWeight\": 500\n  },\n  \"rule\": {\"size\": 3, \"opacity\": 0.75}\n}'"
+                }
+              }
+            },
+            "enableContextMenu": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'vegaLite'"
+                }
+              }
+            },
+            "renderMode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'svg'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataLimit": [
+        {
+          "properties": {
+            "override": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showCustomVisualNotes": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "editor": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Distribution of Readings'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY19SU06",
+      "reportVersionAtImport": {
+        "visual": "1.8.41",
+        "report": "2.0.41",
+        "page": "1.3.41"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "SMLC_Example_Theme8569575662247035.json",
+      "reportVersionAtImport": {
+        "visual": "1.8.53",
+        "report": "2.0.53",
+        "page": "1.3.53"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY19SU06",
+          "path": "BaseThemes/CY19SU06.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "SMLC_Example_Theme8569575662247035.json",
+          "path": "SMLC_Example_Theme8569575662247035.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "store_icon63096506183805.png",
+          "path": "store_icon63096506183805.png",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "deneb7E15AEF80B9E4D4F8E12924291ECE89A",
+      "type": "CustomVisual",
+      "items": [
+        {
+          "name": "deneb7E15AEF80B9E4D4F8E12924291ECE89A.pbiviz.json",
+          "path": "deneb7E15AEF80B9E4D4F8E12924291ECE89A.pbiviz.json",
+          "type": "CustomVisualMetadata"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "hideVisualContainerHeader": true,
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true
+  },
+  "slowDataSourceSettings": {
+    "isCrossHighlightingDisabled": false,
+    "isSlicerSelectionsButtonEnabled": false,
+    "isFilterSelectionsButtonEnabled": false,
+    "isFieldWellButtonEnabled": false,
+    "isApplyAllButtonEnabled": false
+  }
+}

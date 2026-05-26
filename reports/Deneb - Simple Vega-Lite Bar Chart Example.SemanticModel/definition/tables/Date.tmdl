@@ -1,0 +1,102 @@
+table Date
+	lineageTag: d4a1647a-1b36-4af2-8be9-3211899093a7
+
+	column Date
+		lineageTag: 7c37e6a6-e6cd-4425-bcff-73be0a4cb165
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Calendar Year'
+		formatString: 0
+		lineageTag: 9b0090c4-276b-4418-a53f-8a471a967549
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Calendar Year]
+
+		annotation SummarizationSetBy = User
+
+	column 'Month Name'
+		lineageTag: 20b34471-cbcf-415b-ac89-77860d59d118
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Name]
+		sortByColumn: 'Month Number'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column 'Month Number'
+		formatString: 0
+		lineageTag: 398f8cfb-aac8-4f9a-bfe0-62279d6686af
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Number]
+
+		annotation SummarizationSetBy = User
+
+	column 'Date (w/Format)' = 'Date'[Date]
+		lineageTag: 2f42d4d9-ceac-4176-9a3d-b155e63cc45c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Month Start'
+		formatString: Long Date
+		lineageTag: 7b99065d-af0a-4d8d-92b5-b02a31dda5fc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Start]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Month Name (Short)'
+		lineageTag: b3ebe461-2dc9-4f30-ac92-d7a47477857e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Name (Short)]
+		sortByColumn: 'Month Number'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column 'Day of Year'
+		formatString: 0
+		lineageTag: 8765708a-cbcc-4321-aaf8-da90a3294ba2
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day of Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Date-f28dd29b-16b7-487a-9105-8d94ae44eb9b = calculated
+		mode: import
+		source = ```
+				
+				VAR MinYear = YEAR ( MIN ( 'Average Temperature by Month'[Date] ) )
+				VAR MaxYear = YEAR ( MAX ( 'Average Temperature by Month'[Date] ) )
+				RETURN
+				ADDCOLUMNS (
+				    FILTER (
+				        CALENDARAUTO( ), 
+				        AND ( YEAR ( [Date] ) >= MinYear, YEAR ( [Date] ) <= MaxYear )
+				    ),
+				    "Calendar Year", YEAR ( [Date] ),
+				    "Month Name", FORMAT ( [Date], "mmmm" ),
+				    "Month Name (Short)", FORMAT( [Date], "mmm" ),
+				    "Month Number", MONTH ( [Date] ),
+				    "Month Start", DATE(YEAR([Date]), MONTH([Date]), 1),
+				    "Day of Year", DATEDIFF( DATE( YEAR([Date]), 1, 1), [Date], DAY) + 1
+				)
+				```
+

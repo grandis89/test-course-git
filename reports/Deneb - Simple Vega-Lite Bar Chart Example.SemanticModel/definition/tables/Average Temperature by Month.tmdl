@@ -1,0 +1,187 @@
+table 'Average Temperature by Month'
+	lineageTag: 543523a8-4e6a-4b0b-ad3e-653972f47463
+
+	measure 'Mean Temperature' =
+			AVERAGEX(
+			    'Average Temperature by Month',
+			    'Average Temperature by Month'[Average Temperature] - 'Average Temperature by Month'[Average Temperature Uncertainty]
+			)
+		formatString: 0.00
+		lineageTag: 67660d10-68ea-49d1-8f71-642cfe88b027
+
+	measure '10 Year Average by Month (C)' = ```
+			
+			    CALCULATE(
+			        'Average Temperature by Month'[Mean Temperature],
+			        DATESINPERIOD(
+			            'Date'[Date],
+			            LASTDATE('Date'[Date]),
+			            -10,
+			            YEAR
+			        ),
+			        TREATAS(VALUES('Date'[Month Name]), 'Date'[Month Name])
+			    )
+			```
+		formatString: #,0.00
+		lineageTag: de9b66d4-5de6-44fc-9c30-3247db4c1f69
+
+	measure '12 Month Average by Month (C)' = ```
+			
+			    CALCULATE(
+			        'Average Temperature by Month'[Mean Temperature],
+			        DATESINPERIOD(
+			            'Date'[Date],
+			            LASTDATE('Date'[Date]),
+			            -12,
+			            MONTH
+			        ),
+			        TREATAS(VALUES('Date'[Month Name]), 'Date'[Month Name])
+			    )
+			```
+		formatString: #,0.00
+		lineageTag: 24d70b31-c1e3-4246-9ec9-8fa96ed4ac86
+
+	measure 'Seasonality Range Title' = ```
+			
+			    "Average Land Temperature from " & MIN('Date'[Calendar Year]) & " to " & MAX('Date'[Calendar Year]) & " by Month (°C)"
+			```
+		lineageTag: 229d3a20-6200-4a45-a28a-1d2d37210096
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure 'Highest Mean Temperature' =
+			MAXX(
+			    'Average Temperature by Month',
+			    'Average Temperature by Month'[Average Temperature] - 'Average Temperature by Month'[Average Temperature Uncertainty]
+			)
+		lineageTag: 0d6701bd-b65e-497b-8053-f6de5fc9d071
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Lowest Mean Temperature' =
+			MINX(
+			    'Average Temperature by Month',
+			    'Average Temperature by Month'[Average Temperature] - 'Average Temperature by Month'[Average Temperature Uncertainty]
+			)
+		lineageTag: de508da1-1769-48cf-98ec-a21a9218c322
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Highest Mean Temperature Year Month' = ```
+			
+			    CALCULATE(
+			        MAX('Date'[Month Start]),
+			        FILTER(
+			            ALLSELECTED('Average Temperature by Month'),
+			            [Mean Temperature] = [Highest Mean Temperature])
+			        )
+			```
+		formatString: General Date
+		lineageTag: 652083da-6c31-42cc-9c5b-7b4fbbb35a7c
+
+	measure 'Lowest Mean Temperature Year Month' = ```
+			
+			    CALCULATE(
+			        MIN('Date'[Month Start]),
+			        FILTER(
+			            ALLSELECTED('Average Temperature by Month'),
+			            [Mean Temperature] = [Lowest Mean Temperature])
+			        )
+			```
+		formatString: General Date
+		lineageTag: 20d4b57e-cfcd-4783-9fbc-4d6f52936a46
+
+	measure 'Lowest Reading' = FORMAT([Lowest Mean Temperature Year Month], "MMM yyyy") & ": " & FORMAT([Lowest Mean Temperature], "#0.00°C")
+		lineageTag: 37e30618-175f-42b2-92ec-b623dc96902f
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure 'Highest Reading' = FORMAT([Highest Mean Temperature Year Month], "MMM yyyy") & ": " & FORMAT([Highest Mean Temperature], "#0.00°C")
+		lineageTag: 2d01bcc3-04df-4116-b72e-0c6474ced798
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure 'Selected Cities' = IF ( ISFILTERED( Cities[City] ) , CONCATENATEX( VALUES ( Cities[City] ) , Cities[City], ", " ), "[No Active Selection - Showing All Values]" )
+		lineageTag: b5d00130-ff56-4b7f-82ae-372720113bff
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Date
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 7d570006-466e-4fa0-8dcb-49745aa09131
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Average Temperature'
+		dataType: double
+		isHidden
+		lineageTag: d3f5224e-8fec-41e0-9dd4-b4cdcdbcb15d
+		summarizeBy: average
+		sourceColumn: Average Temperature
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Average Temperature Uncertainty'
+		dataType: double
+		isHidden
+		lineageTag: 6646a2b8-95aa-4c20-97f3-f3a3f6e06091
+		summarizeBy: average
+		sourceColumn: Average Temperature Uncertainty
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'City Key'
+		dataType: double
+		isHidden
+		lineageTag: 86e9ec9d-4cbe-4373-a67b-6e4265b2100d
+		summarizeBy: none
+		sourceColumn: City Key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Sample
+		dataType: double
+		lineageTag: d4f2cab6-b71e-4ef1-bfd5-421b77f05527
+		summarizeBy: none
+		sourceColumn: Sample
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Average Temperature by Month-b248e119-ef39-4f80-88d9-ed62b9b2677c' = m
+		mode: import
+		source =
+				let
+				    Source = #"Source Data",
+				    #"Merged Queries" = Table.NestedJoin(Source, {"City", "Country"}, Cities, {"City", "Country"}, "Cities", JoinKind.Inner),
+				    #"Expanded Major Cities" = Table.ExpandTableColumn(#"Merged Queries", "Cities", {"City Key"}, {"City Key"}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Major Cities",{"dt", "AverageTemperature", "AverageTemperatureUncertainty", "Sample", "City Key"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"dt", "Date"}, {"AverageTemperature", "Average Temperature"}, {"AverageTemperatureUncertainty", "Average Temperature Uncertainty"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_QueryRelationships = {"columnCount":5,"keyColumnNames":[],"queryRelationships":[],"columnIdentities":["Section1/Source Data/Added Index.{dt,0}","Section1/Source Data/Added Index.{AverageTemperature,1}","Section1/Source Data/Added Index.{AverageTemperatureUncertainty,2}","Section1/Source Data/Added Index.{Index,7}","Section1/Cities/Added Index.{City Key,4}"],"ColumnCount":5,"KeyColumnNames":[],"ColumnIdentities":["Section1/Source Data/Added Index.{dt,0}","Section1/Source Data/Added Index.{AverageTemperature,1}","Section1/Source Data/Added Index.{AverageTemperatureUncertainty,2}","Section1/Source Data/Added Index.{Index,7}","Section1/Cities/Added Index.{City Key,4}"],"RelationshipInfo":[]}
+
+	annotation PBI_ResultType = Exception
+

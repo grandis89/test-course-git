@@ -1,0 +1,17 @@
+expression 'Source Data' =
+		let
+		    Source = Csv.Document(File.Contents("C:\Users\DanielM\Downloads\GlobalLandTemperaturesByCity.csv"),[Delimiter=",", Columns=7, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+		    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"dt", type date}, {"AverageTemperature", type number}, {"AverageTemperatureUncertainty", type number}, {"City", type text}, {"Country", type text}, {"Latitude", type text}, {"Longitude", type text}}),
+		    #"Filter to NZ" = Table.SelectRows(#"Changed Type", each ([Country] = "New Zealand")),
+		    #"Filter >= 1860" = Table.SelectRows(#"Filter to NZ", each [dt] >= #date(1860, 1, 1)),
+		    #"Added Index" = Table.AddIndexColumn(#"Filter >= 1860", "Index", 1, 1),
+		    #"Renamed Columns" = Table.RenameColumns(#"Added Index",{{"Index", "Sample"}})
+		in
+		    #"Renamed Columns"
+	lineageTag: 248d5e21-d025-4e68-8e46-29354c8a0435
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
