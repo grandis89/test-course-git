@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Deneb - Simple Vega-Lite Bar Chart Example"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7384939b-07cb-4ce0-b982-e1f2fcbaa056"
+  }
+}

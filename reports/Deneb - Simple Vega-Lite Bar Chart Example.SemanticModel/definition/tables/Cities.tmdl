@@ -1,0 +1,101 @@
+table Cities
+	lineageTag: f1235229-6791-4086-9633-bb9acdcffa01
+
+	measure 'Seasonality Drillthrough Title' = ```
+			
+			    "Historic Details for " & MIN('Date'[Month Name]) & " from " & MIN('Date'[Calendar Year]) & " to " & MAX('Date'[Calendar Year]) & " by City (°C)"
+			```
+		lineageTag: 88adb84e-137f-45ea-afc5-9d4ab3f333db
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure 'Seasonality Tooltip Title' = ```
+			
+			    MIN('Date'[Month Name]) & ": " & MIN('Date'[Calendar Year]) & " to " & MAX('Date'[Calendar Year]) & " by City"
+			```
+		lineageTag: f818de26-7057-4ead-a9d1-0617f0cdac28
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	measure 'Mean Temperature (All Cities)' = ```
+			
+			    CALCULATE(
+			        [Mean Temperature],
+			        ALLSELECTED( Cities[City] )
+			    )
+			```
+		formatString: 0.00
+		lineageTag: eee0b4d1-8f35-4a72-961e-575af8cb568c
+
+	column City
+		dataType: string
+		lineageTag: 6bc91d29-fb5f-48b2-85d2-be25053e3b8f
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Country
+		dataType: string
+		lineageTag: 2aac596c-3e92-40b9-a13a-9ca865f5b788
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Latitude
+		dataType: string
+		lineageTag: a67bd06a-f7d2-4690-92ee-b61a1d555831
+		dataCategory: Latitude
+		summarizeBy: none
+		sourceColumn: Latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Longitude
+		dataType: string
+		lineageTag: 20c2f563-471b-427a-bacb-441143df00e0
+		dataCategory: Longitude
+		summarizeBy: none
+		sourceColumn: Longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column 'City Key'
+		dataType: double
+		isHidden
+		lineageTag: a1a2bd8c-ebd9-43d5-ab83-a598a45fdba9
+		summarizeBy: none
+		sourceColumn: City Key
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Cities-552571e5-0a3c-4d0a-9b79-4b8c267dafb5 = m
+		mode: import
+		source =
+				let
+				    Source = #"Source Data",
+				    #"Removed Other Columns" = Table.SelectColumns(Source,{"City", "Country", "Latitude", "Longitude"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns"),
+				    #"Added Index" = Table.AddIndexColumn(#"Removed Duplicates", "City Key", 1, 1)
+				in
+				    #"Added Index"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_QueryRelationships = {"columnCount":5,"keyColumnNames":["City","Country","Latitude","Longitude"],"queryRelationships":[],"columnIdentities":["Section1/Cities/Added Index.{City,0}","Section1/Cities/Added Index.{Country,1}","Section1/Cities/Added Index.{Latitude,2}","Section1/Cities/Added Index.{Longitude,3}","Section1/Cities/Added Index.{City Key,4}"],"ColumnCount":5,"KeyColumnNames":["City","Country","Latitude","Longitude"],"ColumnIdentities":["Section1/Cities/Added Index.{City,0}","Section1/Cities/Added Index.{Country,1}","Section1/Cities/Added Index.{Latitude,2}","Section1/Cities/Added Index.{Longitude,3}","Section1/Cities/Added Index.{City Key,4}"],"RelationshipInfo":[]}
+
+	annotation PBI_ResultType = Table
+

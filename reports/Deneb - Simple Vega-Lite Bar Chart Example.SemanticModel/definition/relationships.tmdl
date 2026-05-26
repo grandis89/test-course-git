@@ -1,0 +1,8 @@
+relationship 0d960f01-3a88-465a-8d80-12c825cc6dc6
+	fromColumn: 'Average Temperature by Month'.'City Key'
+	toColumn: Cities.'City Key'
+
+relationship 65f2b587-3983-4b1b-97a7-2062e8745f79
+	fromColumn: 'Average Temperature by Month'.Date
+	toColumn: Date.Date
+

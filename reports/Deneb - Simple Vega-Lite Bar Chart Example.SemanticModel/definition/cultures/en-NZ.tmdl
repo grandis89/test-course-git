@@ -1,0 +1,2634 @@
+cultureInfo en-NZ
+
+	linguisticMetadata =
+			{
+			  "Version": "1.2.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "average_temperature_by_month.column12_month_average_by_month_c": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month",
+			        "ConceptualProperty": "12 Month Average by Month (C)"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "12 month average by month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "12 month average by month (C)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month average": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "12 month average": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "12 mth average by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "12 month average by mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "12 mth average": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "mth average": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "12 month mode by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "12 month norm by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "12 month mode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "12 month norm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "12 month mean by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "12 month median by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.479
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "Celsius",
+			        "C"
+			      ]
+			    },
+			    "date": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "date.date": {
+			      "Binding": {
+			        "ConceptualEntity": "Date",
+			        "ConceptualProperty": "Date"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.calendar_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date",
+			        "ConceptualProperty": "Calendar Year"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendar year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "calendar yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.75
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.month_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Date",
+			        "ConceptualProperty": "Month Name"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "date.month_number": {
+			      "Binding": {
+			        "ConceptualEntity": "Date",
+			        "ConceptualProperty": "Month Number"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "date.date_w_format": {
+			      "Binding": {
+			        "ConceptualEntity": "Date",
+			        "ConceptualProperty": "Date (w/Format)"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date (w/format)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "date (w": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "date ( w format )": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "format)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "moment ( w format )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "moment (w": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period ( w format )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "period (w": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.month_start": {
+			      "Binding": {
+			        "ConceptualEntity": "Date",
+			        "ConceptualProperty": "Month Start"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month start": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "mth start": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "month twitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "month jump": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "month jerk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "month flinch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "month jolt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "twitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "jump": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "jerk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "flinch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.month_name_short": {
+			      "Binding": {
+			        "ConceptualEntity": "Date",
+			        "ConceptualProperty": "Month Name (Short)"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month name (short)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month name": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth name (short)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "month nickname (short)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "month title (short)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "month label (short)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "month tag (short)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "city": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "city": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "metropolis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "municipality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "town": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "metropolitan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "city.city": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities",
+			        "ConceptualProperty": "City"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "city": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "city name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "metropolis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "municipality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "town": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "metropolitan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "city.country": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities",
+			        "ConceptualProperty": "Country"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "country": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "city.latitude": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities",
+			        "ConceptualProperty": "Latitude"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "latitude": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "leeway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "freedom": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "autonomy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "liberty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "opportunity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "room": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "scope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "city.longitude": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities",
+			        "ConceptualProperty": "Longitude"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "longitude": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "city.city_key": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities",
+			        "ConceptualProperty": "City Key"
+			      },
+			      "State": "Generated",
+			      "Hidden": true,
+			      "Terms": [
+			        {
+			          "city key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "location key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "metropolis key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "municipality key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "town key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "metropolitan key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "main": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "central": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "major": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "city.seasonality_drillthrough_title": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities",
+			        "ConceptualProperty": "Seasonality Drillthrough Title"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "seasonality drillthrough title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "seasonality drillthrough designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "seasonality drillthrough name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality drillthrough award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality drillthrough call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality drillthrough heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality drillthrough label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "city.seasonality_tooltip_title": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities",
+			        "ConceptualProperty": "Seasonality Tooltip Title"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "seasonality tooltip title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "tooltip title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "seasonality tooltip designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "tooltip designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "seasonality tooltip name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality tooltip award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality tooltip call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality tooltip heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality tooltip label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "tooltip name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tooltip award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "city.mean_temperature_all_cities": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities",
+			        "ConceptualProperty": "Mean Temperature (All Cities)"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mean temperature (all cities)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mean temperature": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average temperature by month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "temperature": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average temperature": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average temperature by mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "average infection by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "average disease by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "average illness by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "average malaise by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "average infection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average disease": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average illness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average malaise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average fever by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month.date": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month",
+			        "ConceptualProperty": "Date"
+			      },
+			      "State": "Generated",
+			      "Hidden": true,
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "average_temperature_by_month.average_temperature": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month",
+			        "ConceptualProperty": "Average Temperature"
+			      },
+			      "State": "Generated",
+			      "Hidden": true,
+			      "Terms": [
+			        {
+			          "average temperature": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "temperature": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average infection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average disease": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average illness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "average malaise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "infection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "disease": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "illness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "malaise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "average fever": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fever": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month.average_temperature_uncertainty": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month",
+			        "ConceptualProperty": "Average Temperature Uncertainty"
+			      },
+			      "State": "Generated",
+			      "Hidden": true,
+			      "Terms": [
+			        {
+			          "average temperature uncertainty": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "uncertainty": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "temperature uncertainty": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average temperature indecision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "average temperature hesitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "average temperature vagueness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "average temperature ambiguity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "average temperature insecurity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "average temperature improbability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "temperature indecision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "temperature hesitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "temperature vagueness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "temperature ambiguity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month.city_key": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month",
+			        "ConceptualProperty": "City Key"
+			      },
+			      "State": "Generated",
+			      "Hidden": true,
+			      "Terms": [
+			        {
+			          "city key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "location key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "metropolis key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "municipality key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "town key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "metropolitan key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "main": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "central": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "major": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month.sample": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month",
+			        "ConceptualProperty": "Sample"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sample": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "taster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "illustration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "mockup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tester": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "example": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "model": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "trial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month.mean_temperature_C": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month",
+			        "ConceptualProperty": "Mean Temperature"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mean temperature": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "temperature": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "mean infection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mean disease": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mean illness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mean malaise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "infection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "disease": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "illness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "malaise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "mean fever": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "nasty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month.v10_Year_Average_by_Month__C_10_year_average_by_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month",
+			        "ConceptualProperty": "10 Year Average by Month (C)"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "10 year average by month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "10 year average by month (C)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year average": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "10 year average": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "10 yr average by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "10 year average by mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "10 yr average": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "yr average": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "10 year mode by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "10 year norm by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "10 year mode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "10 year norm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "10 year mean by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "10 year median by month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.479
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "Celsius",
+			        "C"
+			      ]
+			    },
+			    "average_temperature_by_month.seasonality_range_title": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month",
+			        "ConceptualProperty": "Seasonality Range Title"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "seasonality range title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "range title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "seasonality range designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "range designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "seasonality range name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality range award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality range call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality range heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "seasonality range label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "range name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "range award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "date.day_of_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date",
+			        "ConceptualProperty": "Day of Year"
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day of year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day of yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "city_is_named_city": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city": {
+			          "Target": {
+			            "Entity": "city"
+			          }
+			        },
+			        "city.city": {
+			          "Target": {
+			            "Entity": "city.city"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "city"
+			            },
+			            "Name": {
+			              "Role": "city.city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city"
+			            },
+			            "Object": {
+			              "Role": "city.city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "date_is_calendared_in_calendar_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.calendar_year": {
+			          "Target": {
+			            "Entity": "date.calendar_year"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "date.calendar_year"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "calendar": {}
+			              }
+			            ],
+			            "Object": {
+			              "Role": "date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9
+			        }
+			      ]
+			    },
+			    "city_in_country": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city": {
+			          "Target": {
+			            "Entity": "city"
+			          }
+			        },
+			        "city.country": {
+			          "Target": {
+			            "Entity": "city.country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "city.country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "city"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {}
+			              }
+			            ],
+			            "Object": {
+			              "Role": "city.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month_in_city": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "average_temperature_by_month": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month"
+			          }
+			        },
+			        "city": {
+			          "Target": {
+			            "Entity": "city"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "city"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "average_temperature_by_month"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {}
+			              }
+			            ],
+			            "Object": {
+			              "Role": "city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month_has_column12_month_average_by_month_c": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "average_temperature_by_month": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month"
+			          }
+			        },
+			        "average_temperature_by_month.column12_month_average_by_month_c": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month.column12_month_average_by_month_c"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "average_temperature_by_month"
+			            },
+			            "Object": {
+			              "Role": "average_temperature_by_month.column12_month_average_by_month_c"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "date_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.date": {
+			          "Target": {
+			            "Entity": "date.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "date_has_calendar_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.calendar_year": {
+			          "Target": {
+			            "Entity": "date.calendar_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.calendar_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "date_has_month_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.month_name": {
+			          "Target": {
+			            "Entity": "date.month_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.month_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "date_has_month_number": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.month_number": {
+			          "Target": {
+			            "Entity": "date.month_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.month_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "date_has_date_w_format": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.date_w_format": {
+			          "Target": {
+			            "Entity": "date.date_w_format"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.date_w_format"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "date_has_month_start": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.month_start": {
+			          "Target": {
+			            "Entity": "date.month_start"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.month_start"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "date_has_month_name_short": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.month_name_short": {
+			          "Target": {
+			            "Entity": "date.month_name_short"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.month_name_short"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "city_has_country": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city": {
+			          "Target": {
+			            "Entity": "city"
+			          }
+			        },
+			        "city.country": {
+			          "Target": {
+			            "Entity": "city.country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city"
+			            },
+			            "Object": {
+			              "Role": "city.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "city_has_latitude": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city": {
+			          "Target": {
+			            "Entity": "city"
+			          }
+			        },
+			        "city.latitude": {
+			          "Target": {
+			            "Entity": "city.latitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city"
+			            },
+			            "Object": {
+			              "Role": "city.latitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "city_has_longitude": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city": {
+			          "Target": {
+			            "Entity": "city"
+			          }
+			        },
+			        "city.longitude": {
+			          "Target": {
+			            "Entity": "city.longitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city"
+			            },
+			            "Object": {
+			              "Role": "city.longitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "city_has_seasonality_drillthrough_title": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city": {
+			          "Target": {
+			            "Entity": "city"
+			          }
+			        },
+			        "city.seasonality_drillthrough_title": {
+			          "Target": {
+			            "Entity": "city.seasonality_drillthrough_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city"
+			            },
+			            "Object": {
+			              "Role": "city.seasonality_drillthrough_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "city_has_seasonality_tooltip_title": {
+			      "Binding": {
+			        "ConceptualEntity": "Cities"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city": {
+			          "Target": {
+			            "Entity": "city"
+			          }
+			        },
+			        "city.seasonality_tooltip_title": {
+			          "Target": {
+			            "Entity": "city.seasonality_tooltip_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city"
+			            },
+			            "Object": {
+			              "Role": "city.seasonality_tooltip_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month_has_city_mean_temperature_all_cities": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "average_temperature_by_month": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month"
+			          }
+			        },
+			        "city.mean_temperature_all_cities": {
+			          "Target": {
+			            "Entity": "city.mean_temperature_all_cities"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "average_temperature_by_month"
+			            },
+			            "Object": {
+			              "Role": "city.mean_temperature_all_cities"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month_has_sample": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "average_temperature_by_month": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month"
+			          }
+			        },
+			        "average_temperature_by_month.sample": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month.sample"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "average_temperature_by_month"
+			            },
+			            "Object": {
+			              "Role": "average_temperature_by_month.sample"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month_has_mean_temperature_C": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "average_temperature_by_month": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month"
+			          }
+			        },
+			        "average_temperature_by_month.mean_temperature_C": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month.mean_temperature_C"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "average_temperature_by_month"
+			            },
+			            "Object": {
+			              "Role": "average_temperature_by_month.mean_temperature_C"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month_has_v10_Year_Average_by_Month__C_10_year_average_by_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "average_temperature_by_month": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month"
+			          }
+			        },
+			        "average_temperature_by_month.v10_Year_Average_by_Month__C_10_year_average_by_month": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month.v10_Year_Average_by_Month__C_10_year_average_by_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "average_temperature_by_month"
+			            },
+			            "Object": {
+			              "Role": "average_temperature_by_month.v10_Year_Average_by_Month__C_10_year_average_by_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month_has_seasonality_range_title": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "average_temperature_by_month": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month"
+			          }
+			        },
+			        "average_temperature_by_month.seasonality_range_title": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month.seasonality_range_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "average_temperature_by_month"
+			            },
+			            "Object": {
+			              "Role": "average_temperature_by_month.seasonality_range_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "date_has_day_of_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Date"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.day_of_year": {
+			          "Target": {
+			            "Entity": "date.day_of_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.day_of_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month_has_city": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "average_temperature_by_month": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month"
+			          }
+			        },
+			        "city": {
+			          "Target": {
+			            "Entity": "city"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "average_temperature_by_month"
+			            },
+			            "Object": {
+			              "Role": "city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city"
+			            },
+			            "Object": {
+			              "Role": "average_temperature_by_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    },
+			    "average_temperature_by_month_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Average Temperature by Month"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "average_temperature_by_month": {
+			          "Target": {
+			            "Entity": "average_temperature_by_month"
+			          }
+			        },
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "average_temperature_by_month"
+			            },
+			            "Object": {
+			              "Role": "date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "average_temperature_by_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+
