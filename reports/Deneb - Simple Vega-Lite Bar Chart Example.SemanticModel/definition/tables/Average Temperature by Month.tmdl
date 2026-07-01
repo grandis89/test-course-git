@@ -6,7 +6,7 @@ table 'Average Temperature by Month'
 			    'Average Temperature by Month',
 			    'Average Temperature by Month'[Average Temperature] - 'Average Temperature by Month'[Average Temperature Uncertainty]
 			)
-		formatString: 0.00
+		formatString: 0.0
 		lineageTag: 67660d10-68ea-49d1-8f71-642cfe88b027
 
 	measure '10 Year Average by Month (C)' = ```
